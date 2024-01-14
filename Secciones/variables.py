@@ -30,7 +30,7 @@ print(lista, type(lista))
 tupla = (1, 2, 3, "Rofer", True, [4, 5, 6], [10, 11, 12])
 print(tupla, type(tupla))
 
-#diccionario
+# diccionario
 # llave : valor
 diccionario = {"nombre" : "rofer", "edad" : 20}
 print(diccionario, type(diccionario))
