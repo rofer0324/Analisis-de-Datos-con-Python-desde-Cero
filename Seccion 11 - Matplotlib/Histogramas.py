@@ -7,6 +7,9 @@ import numpy as np
 elementos = np.random.randint(18, 33, (50, ))
 
 plt.hist(elementos, bins=range(18, 33))
+plt.title("Histograma de edades 18 - 32")
+plt.xlabel("Edades")
+plt.ylabel("Cantidad")
 plt.show()
 
 # Contar cuantas personas tienen 18 años

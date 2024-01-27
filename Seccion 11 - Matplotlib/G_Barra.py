@@ -8,3 +8,6 @@ plt.title('Gráfico de barras')
 plt.xlabel('Eje X')
 plt.ylabel('Eje Y')
 plt.show()
+
+# Para agregar codigo Latex es:
+# plt.title(r"$\\frac{1}{4}$")
