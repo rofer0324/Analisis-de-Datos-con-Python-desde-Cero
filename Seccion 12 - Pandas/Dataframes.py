@@ -1,4 +1,5 @@
 import pandas as pd
+import numpy as np
 
 # Estructura para el Data Frame
 # pd.DataFrame(data, index, columns, dtype)
@@ -32,3 +33,11 @@ diccionario_persona = [
 
 data_frame3 = pd.DataFrame(diccionario_persona)
 print(data_frame3)
+
+# Dataframe a partir de una Matriz
+print("\n","-"*25)
+matriz = np.random.randint(0, 11, (4,3))
+calificaciones = ["Programacion", "Base de Datos", "Redes"]
+
+data_frame4 = pd.DataFrame(matriz, columns=calificaciones)
+print(data_frame4)
