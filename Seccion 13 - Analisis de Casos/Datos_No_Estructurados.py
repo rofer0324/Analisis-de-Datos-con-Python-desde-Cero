@@ -30,17 +30,14 @@ dataframe["Weekend end date"] = pd.to_datetime(dataframe["Weekend end date"])
 # Crear columna solamente para el numero de mes
 dataframe["Month"] = pd.DatetimeIndex(dataframe["Weekend end date"]).month
 
-
 print("\n", dataframe.head(5))
 print("\n", dataframe.info())
 
 print("\n", "*"*65)
-
 df_1 = dataframe[ ["Film", "Gross"] ].sort_values(ascending=False, by="Gross")
 print(df_1)
 
 # Grafico 1 - Barra
-
 print("\n", "*"*65)
 plt.figure(figsize=(10, 5))
 plt.bar(df_1["Film"].head(5), df_1["Gross"].head(5), color=['b', 'g', 'r', 'c', 'm', 'y'])
@@ -51,7 +48,6 @@ plt.xticks(rotation=10)
 plt.show()
 
 # Grafico 2 - Pastel
-
 print("\n", "*"*65)
 plt.figure(figsize=(10, 5))
 plt.title("Top 10 Peliculas por ingresos")
