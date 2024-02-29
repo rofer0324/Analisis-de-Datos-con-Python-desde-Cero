@@ -33,5 +33,5 @@ if __name__ == "__main__":
    print(dataframe)
    
    dataframe.to_json("planetas.json")
-   dataframe.to_csv("planetas.csv")
+   dataframe.to_csv("planetas.csv", index=False)
 
