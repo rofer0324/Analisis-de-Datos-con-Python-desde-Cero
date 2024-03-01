@@ -18,6 +18,9 @@ def obtener_planetas():
             datos_planetas["Planeta"] = td[1].text.strip()
             datos_planetas["Diametro"] = td[2].text.strip()
             datos_planetas["Periodo_Orbital"] = td[3].text.strip()
+            
+            datos_planetas["imagen"] = f'https:{td[4].find("img")["src"]}'
+            
             return datos_planetas
         except:
             pass
